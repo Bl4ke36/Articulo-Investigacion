@@ -4,12 +4,7 @@ font-family: 'Roboto', sans-serif;
 background-color: rgb(46, 46, 46);
 color: azure;
 }
-a{
-    color: aquamarine;
-}
-a:hover {
-    color: cornsilk;
-}
+
 .container{
     position: relative;
     left: 50%;
@@ -20,6 +15,7 @@ a:hover {
 }
 
 .center{
+    margin-left: 80px; 
     color: snow;   
     font-size: 5rem;
     font-family: 'Baskervville', serif;
@@ -31,6 +27,7 @@ a:hover {
 
 .banner
 {
+    margin-left: 80px; 
     width: 100%;
     border-radius: 4rem;
 }
@@ -67,4 +64,58 @@ a:hover {
   
 .active:after {
     content: "ʌ"; /* Unicode character for "minus" sign (-) */
+}
+
+.chapters{
+    padding-top: 2rem ;
+}
+
+.theme{
+    display: block;
+    font-family: 'Baskervville', serif;
+    font-size: 3rem; 
+    box-sizing: border-box;
+    border-bottom: 4px solid aquamarine;
+    margin: 3px;
+}
+
+.subtheme{
+    font-size: 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid aquamarine;
+    padding-top: 10px;
+    margin: 3px;
+}
+
+.sidenav {
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    overflow-x: hidden;
+    padding: 8px 0;
+}
+  
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    color: aquamarine;
+    display: block;
+}
+  
+.sidenav a:hover {
+    color: cornsilk;
+    cursor: pointer;
+}
+  
+.main {
+    margin-left: 150px; 
+    font-size: 18px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+  
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
