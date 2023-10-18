@@ -92,6 +92,7 @@ color: azure;
 
 .sidenav {
     background: rgb(59, 59, 59);
+    border-radius: 1rem;
     width: 150px;
     position: fixed;
     z-index: 1;
