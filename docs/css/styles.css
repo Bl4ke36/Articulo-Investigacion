@@ -124,3 +124,127 @@ color: azure;
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+    max-width: 700px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: aquamarine;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+    font-family: 'Baskervville', serif;
+    color: rgb(254, 250, 255);
+    font-size: 25px;
+    padding: 8px 12px;  
+    position: absolute;
+    top: -30px;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.poem{
+    text-align: center;
+    font-family: 'Baskervville', serif;
+    font-size: 22px;
+}
+  
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+    
+div.desc {
+    padding: 30px;
+    text-align: center;
+    font-family: 'Baskervville', serif;
+}
+  
+* {
+    box-sizing: border-box;
+}
+  
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 19.99999%;
+}
+  
+@media only screen and (max-width: 500px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 2px 0;
+    }
+}
+  
+@media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+}
+  
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    color: aquamarine;
+}
